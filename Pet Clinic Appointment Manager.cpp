@@ -62,7 +62,6 @@ void saveToFile() {
 
     file << "PetName,OwnerContact,Date,Time,Reason\n";
 
-    // Write each appointment
     for (int i = 0; i < appointments.size(); i++) {
         file << appointments[i].petName      << ","
              << appointments[i].ownerContact << ","
@@ -220,13 +219,12 @@ void viewAllAppointments() {
     cout << "  Total Records: " << appointments.size() << "\n";
 }
 
-//  MAIN MENU
 int main() {
-    cout << "\n  ╔══════════════════════════════════════════╗\n";
-    cout << "  ║   PET CLINIC APPOINTMENT MANAGER         ║\n";
-    cout << "  ╚══════════════════════════════════════════╝\n";
+    cout << "\n  ╔════════════════════════════════════════════╗\n";
+    cout << "  ║   PET CLINIC APPOINTMENT MANAGER - VETTA   ║\n";
+    cout << "  ╚════════════════════════════════════════════╝\n";
 
-    // Load data galing sa file
+    // Load data from file
     loadFromFile();
 
     int choice;
